@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" href="styles.css">
+    <title>The Excuse Generator
+</title>
+</head>
+<body>
+<div class="container">
+      <h1>OMG! You will not believe but...</h1>
+      <p id="excuse"></p>
+      </div>
+    <script>
+        
+            
+           
+            let who  =  ['The dog','My grandma','His turtle','My bird']; 
+            let action = ['ate','peed','crushed','broke'];
+            let what = ['my homework', 'the keys', 'the car'];
+            let when = ['before the class','right on time','when I finished','during my lunch','while I was praying'];
+            var whoindex = Math.floor(Math.random() * Math.floor(who .length)); 
+            console.log (who[whoindex])
+             var actionindex =   Math.floor(Math.random() * Math.floor(action.length)); 
+            console.log (action[actionindex])
+             var whenindex =   Math.floor(Math.random() * Math.floor(when.length)); 
+            console.log (when[whenindex])
+             var whatindex =   Math.floor(Math.random() * Math.floor(what.length)); 
+            console.log (what[whatindex])
+            document.getElementById("excuse").innerHTML = who[whoindex]+ " " +action[actionindex]+ " " +when[whenindex]+ " " +what[whatindex];
+
+            
+            
+           
+
+      
+    </script>
+</div>
+</body>
+</html>
